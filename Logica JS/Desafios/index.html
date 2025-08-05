@@ -234,30 +234,25 @@ const dia_da_semana = prompt("Digite o dia da semana:")
           <!-- Desafio 3 -->
           <div class="challenge">
             <button class="challenge-title">
-              <span>Desafio 3</span> 
+              <span>Desafio 3</span>Perdeu... Ganhou! 
             </button>
             <div class="challenge-content">
               <h4>Demonstração Interativa</h4>
               <div class="interactive-demo">
-                <button id="run">Executar </button>
+                <input type="number" id="getNumeroPontos" placeholder="Insira aqui sua pontuação:">
+                <button id="runNumeroPontos">Executar</button>
               </div>
               <h4>Resolução em Código</h4>
-              <pre><code>;</code></pre>
-            </div>
-          </div>
+              <pre><code>// Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.".
+        let pontuacao = prompt("Insira aqui sua pontuação:")
 
-          <!-- Desafio 4 -->
-          <div class="challenge">
-            <button class="challenge-title">
-              <span>Desafio 4</span> 
-            </button>
-            <div class="challenge-content">
-              <h4>Demonstração Interativa</h4>
-              <div class="interactive-demo">
-                <button id="run">Executar </button>
-              </div>
-              <h4>Resolução em Código</h4>
-              <pre><code>;</code></pre>
+        if(pontuacao.trim() === "" || isNaN(Number(pontuacao))) {
+            alert("O valor digitado é inválido, tente de novo!");
+        } else if (Number(pontuacao) >= 100){
+            alert("Ganhou!!!! Parabéns!!")
+        } else {
+            alert("Perdeu!! Não foi dessa vez")
+          }</code></pre>
             </div>
           </div>
         </div>

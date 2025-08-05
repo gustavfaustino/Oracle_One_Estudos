@@ -106,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // PARTE 2
 
     // Desafio 1: boa semana!
-
     // Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
     document.getElementById("runWeekdayCheck").addEventListener("click", () => {
         let dia_da_semana = document.getElementById("getDiaSemana").value
@@ -139,4 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Desafio 3:
     // Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.".
+    document.getElementById("runNumeroPontos").addEventListener("click", () => {
+        let pontuacao = document.getElementById("getNumeroPontos").value
+
+        if(pontuacao.trim() === "" || isNaN(Number(pontuacao))) {
+            alert("O valor digitado é inválido, tente de novo!");
+        } else if (Number(pontuacao) >= 100){
+            alert("Ganhou!!!! Parabéns!!")
+        } else {
+            alert("Perdeu!! Não foi dessa vez :(")
+        }
+    })
 })();
