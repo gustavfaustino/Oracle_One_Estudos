@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Desafios de Programação | Oracle ONE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Meus Desafios de Programação</h1>
+      <p>
+        Soluções e demonstrações dos exercícios do programa Oracle Next
+        Education.
+      </p>
+    </header>
+
+    <main class="challenges-container">
+      <div class="module-container">
+        <button class="module-title">
+          <span class="module-icon">📚</span>
+          Desafios Aula 1: Variáveis e Operadores
+        </button>
+
+        <div class="module-content">
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 1</span> Boas-vindas ao Site
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runWelcome">Executar Alerta</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Mostre um alerta com a mensagem "Boas vindas ao nosso site!".
+alert("Boas vindas ao nosso site!");</code></pre>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 2</span> Declarar variável "nome"
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runNameVariable">Executar e ver o valor</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Declare uma variável chamada nome e atribua a ela o valor "Lua".
+let nome = "Lua";
+alert(`A variável 'nome' foi definida como: ${nome} 🌙`);</code></pre>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 3</span> Declarar variável "idade"
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runAgeVariable">Executar e ver o valor</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Crie uma variável chamada idade e atribua a ela o valor 25.
+let idade = 25;
+alert(`A variável 'idade' foi definida como: ${idade}`);</code></pre>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 4</span> Declarar "numeroDeVendas"
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runSalesVariable">Executar e ver o valor</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Defina uma variável numeroDeVendas e atribua a ela o valor 50.
+let numeroDeVendas = 50;
+alert(`A variável 'numeroDeVendas' foi definida como: ${numeroDeVendas}`);</code></pre>
+              </div>
+            </div>
+          
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 5</span> Declarar "saldoDisponivel"
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runBalanceVariable">Executar e ver o valor</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Defina uma variável saldoDisponivel e atribua a ela o valor 1000.
+let saldoDisponivel = 1000;
+alert(`A variável 'saldoDisponivel' foi definida como: ${saldoDisponivel}`);</code></pre>
+              </div>
+            </div>
+          
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 6/7</span> Exibir mensagem de erro
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <button id="runErrorMessage">Executar alerta de erro</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Exiba um alerta com o texto "Erro! Preencha todos os campos"
+alert("Erro! Preencha todos os campos");</code></pre>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 8</span> Perguntar o nome do usuário
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <p>Simulando a função `prompt`:</p>
+                <input
+                  type="text"
+                  id="nameInput"
+                  placeholder="Digite seu nome aqui"
+                />
+                <button id="runNamePrompt">Enviar</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Use um prompt para perguntar o nome do usuário e armazene-o.
+let nome_usuario = prompt("Qual é o seu nome?");
+alert("Olá, " + nome_usuario + "! Bem-vindo(a) ao nosso site!");</code></pre>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 9/10</span> Pode tirar a habilitação?
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+                <p>Simulando a validação de idade:</p>
+                <input type="number" id="ageInput" placeholder="Digite sua idade" />
+                <button id="runAgeCheck">Verificar</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>// Peça a idade e verifique se é maior ou igual a 18.
+let idade_usuario = prompt("Qual é a sua idade?");
+
+if (idade_usuario >= 18) {
+    alert("Pode tirar a habilitação!");
+} else {
+    alert("Não pode tirar a habilitação ainda.");
+}</code></pre>
+            </div>
+          </div></div>
+        </div></div>
+      </div>
+      <div class="module-container">
+        <button class="module-title">
+          <span class="module-icon">🎛️</span>
+          Desafios Aula 2: Condicionais e Loops
+        </button>
+
+        <div class="module-content">
+          <p style="padding: 1.5rem; text-align: center; color: var(--text-secondary);">
+            Desafios da Aula 2 serão adicionados aqui...
+          </p>
+        </div>
+      </div>
+
+    </main>
+
+    <div id="custom-alert" class="custom-alert"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

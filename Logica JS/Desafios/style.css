@@ -1,0 +1,240 @@
+/* Estilos Gerais e Fonte */
+:root {
+    --primary-purple: #9370DB; /* Roxo principal (MediumPurple) */
+    --primary-purple-darker: #7B68EE; /* Roxo mais escuro para hover */
+    --bg-dark-primary: #121212; /* Fundo principal (preto suave) */
+    --bg-dark-secondary: #1E1E1E; /* Fundo dos cards e elementos */
+    --text-primary: #EAEAEA; /* Cor do texto principal (branco suave) */
+    --text-secondary: #A0A0A0; /* Cor do texto secundário */
+    --border-color: #333333; /* Cor das bordas */
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark-primary);
+    color: var(--text-primary);
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, var(--primary-purple-darker), var(--primary-purple));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-purple);
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Container Principal */
+.challenges-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Estilo de cada bloco de desafio */
+.challenge {
+    background-color: var(--bg-dark-secondary);
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    overflow: hidden; /* Importante para a animação */
+}
+
+.challenge-title {
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-primary);
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.challenge-title:hover {
+    background-color: rgba(147, 112, 219, 0.1); /* Roxo bem suave no hover */
+}
+
+.challenge-title span {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Conteúdo do Desafio (a parte que abre e fecha) */
+.challenge-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0 1.5rem; /* Padding é zero quando fechado */
+    border-top: 1px solid var(--border-color);
+}
+
+/* Quando o conteúdo está aberto */
+.challenge-content.open {
+    max-height: 600px; /* Altura suficiente para o conteúdo */
+    padding: 1.5rem 1.5rem;
+}
+
+.challenge-content h4 {
+    margin-top: 0;
+    color: var(--primary-purple);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Demonstração Interativa */
+.interactive-demo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 300px;
+}
+.interactive-demo p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+.interactive-demo input {
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    background-color: #252525;
+    color: var(--text-primary);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s;
+}
+.interactive-demo input:focus {
+    outline: none;
+    border-color: var(--primary-purple);
+}
+.interactive-demo button {
+    background-color: var(--primary-purple);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.interactive-demo button:hover {
+    background-color: var(--primary-purple-darker);
+}
+
+/* Bloco de Código */
+pre {
+    background-color: #0d0d0d; /* Fundo do código ainda mais escuro */
+    color: #e0e0e0;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #2a2a2a;
+}
+pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Alerta Customizado */
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-purple);
+    color: white;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, top 0.4s ease;
+}
+
+.custom-alert.show {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
+
+/* =================================== */
+/* ESTILOS PARA OS MÓDULOS DE AULAS    */
+/* =================================== */
+
+.module-container {
+    background-color: var(--bg-dark-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Mantém o conteúdo dentro das bordas arredondadas */
+    overflow: hidden;
+}
+
+.module-title {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
+    border: none;
+    /* A borda inferior só aparece quando o módulo está fechado */
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: background-color 0.3s;
+}
+
+.module-title:hover {
+    background-color: #333;
+}
+
+.module-icon {
+    font-size: 1.8rem;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Gira o ícone quando a seção está aberta */
+.module-title.open .module-icon {
+    transform: rotate(15deg);
+}
+
+.module-content {
+    /* Começa fechado */
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.8s ease-in-out;
+}
+
+/* Classe 'open' que o JavaScript adiciona para abrir a seção */
+.module-content.open {
+    /* Altura grande o suficiente para caber todos os desafios */
+    max-height: 3000px;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
