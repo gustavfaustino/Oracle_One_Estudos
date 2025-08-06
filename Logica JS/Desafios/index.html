@@ -218,7 +218,16 @@ const dia_da_semana = prompt("Digite o dia da semana:")
                 <button id="runVerificaNumero">Executar</button>
               </div>
               <h4>Resolução em Código</h4>
-              <pre><code>;</code></pre>
+              <pre><code>// Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.
+    let numero_digitado = prompt("Digite um número qualquer:")
+
+        if (numero_digitado.trim() === "" || isNaN(Number(numero_digitado))) {
+            alert("O valor digitado é inválido, tente de novo!");
+        } else if (Number(numero_digitado) >= 0) {
+            alert(`O valor ${numero_digitado} é positivo!`);
+        } else {
+            alert(`O valor ${numero_digitado} é negativo!`);
+        }</code></pre>
             </div>
           </div>
 
