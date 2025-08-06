@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             alert("Boa semana!");
         }
+        dia_da_semana.value == "";
     });
 
 })();
