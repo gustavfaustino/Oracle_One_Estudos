@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Desafio 8: Prompt de Nome
     document.getElementById("runNamePrompt").addEventListener("click", () => {
-        const nameInput = document.getElementById("nameInput");
-        const userName = nameInput.value;
+        let nameInput = document.getElementById("nameInput");
+        let userName = nameInput.value;
 
         if (userName.trim() === "") {
             alert("Por favor, digite um nome.");
@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Desafio 9/10: Validação de Idade
     document.getElementById("runAgeCheck").addEventListener("click", () => {
-        const ageInput = document.getElementById("ageInput");
-        const userAge = parseInt(ageInput.value);
+        let ageInput = document.getElementById("ageInput");
+        let userAge = parseInt(ageInput.value);
 
         if (isNaN(userAge) || ageInput.value.trim() === "") {
             alert("Por favor, digite uma idade válida.");
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
     document.getElementById("runWeekdayCheck").addEventListener("click", () => {
-        const dia_da_semana = document.getElementById("getDiaSemana").value
+        let dia_da_semana = document.getElementById("getDiaSemana").value
 
         if (dia_da_semana.toLowerCase() === "sábado" || dia_da_semana.toLowerCase() === "domingo") {
             alert("Bom fim de semana!");
@@ -119,6 +119,22 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Boa semana!");
         }
         dia_da_semana.value == "";
+    });
+
+    // Desafio 2: Mais ou menos
+    // Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.
+    document.getElementById("runVerificaNumero").addEventListener("click", () => {
+        let numero_digitado = document.getElementById("getVerificaNumero").value;
+
+        if (numero_digitado.trim() === "" || isNaN(Number(numero_digitado))) {
+            alert("O valor digitado é inválido, tente de novo!");
+        } else if (Number(numero_digitado) >= 0) {
+            alert(`O valor ${numero_digitado} é positivo!`);
+        } else {
+            alert(`O valor ${numero_digitado} é negativo!`);
+        }
+
+        numero_digitado.value == ""
     });
 
 })();
