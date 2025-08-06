@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-        // ================================================================
-        // ============ LÓGICA PARA OS MÓDULOS DE AULAS (NOVO) ============
-        // ================================================================
-        // Esta parte cuida de abrir e fechar as seções principais (Aula 1, Aula 2, etc.)
+    // ================================================================
+    // ============ LÓGICA PARA OS MÓDULOS DE AULAS (NOVO) ============
+    // ================================================================
+    // Esta parte cuida de abrir e fechar as seções principais (Aula 1, Aula 2, etc.)
 
-        // Pega todos os botões de título dos módulos
-        const moduleTitles = document.querySelectorAll('.module-title');
+    // Pega todos os botões de título dos módulos
+    const moduleTitles = document.querySelectorAll('.module-title');
 
-        moduleTitles.forEach(title => {
-            title.addEventListener('click', () => {
-                // Adiciona ou remove a classe 'open' do botão para o ícone girar
-                title.classList.toggle('open');
+    moduleTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            // Adiciona ou remove a classe 'open' do botão para o ícone girar
+            title.classList.toggle('open');
 
-                // Pega o contêiner de desafios que vem logo depois do botão
-                const moduleContent = title.nextElementSibling;
-                // Adiciona ou remove a classe 'open' para mostrar ou esconder o conteúdo
-                moduleContent.classList.toggle('open');
-            });
+            // Pega o contêiner de desafios que vem logo depois do botão
+            const moduleContent = title.nextElementSibling;
+            // Adiciona ou remove a classe 'open' para mostrar ou esconder o conteúdo
+            moduleContent.classList.toggle('open');
         });
+    });
 
     // --- LÓGICA DO ACORDEÃO (ABRIR/FECHAR DESAFIOS) ---
     const challengeTitles = document.querySelectorAll('.challenge-title');
@@ -101,6 +101,23 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Não pode tirar a habilitação ainda.");
         }
         ageInput.value = ""; // Limpa o campo
+    });
+
+    // PARTE 2
+
+    // Desafio 1: boa semana!
+
+    // Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
+    document.getElementById("runWeekdayCheck").addEventListener("click", () => {
+        const dia_da_semana = document.getElementById("getDiaSemana").value
+
+        if (dia_da_semana.toLowerCase() === "sábado" || dia_da_semana.toLowerCase() === "domingo") {
+            alert("Bom fim de semana!");
+        } else if (dia_da_semana.trim() === "" || dia_da_semana.match(/\d+/)) {
+            alert("Digite um texto na caixa!");
+        } else {
+            alert("Boa semana!");
+        }
     });
 
 })();
