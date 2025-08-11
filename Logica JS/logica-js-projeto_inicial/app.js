@@ -10,16 +10,20 @@ while (chute != numeroSecreto) {
     break;
   } else {
     if (chute < numeroSecreto) {
-      alert('Você errou! O número secreto é maior que ' + chute);
+      alert(`Você errou! O número secreto é maior que ${chute}`);
     } else {
-      alert('Você errou! O número secreto é menor que ' + chute);
+      alert(`Você errou! O número secreto é menor que ${chute}`);
     }
     tentativas++
   }
   // console.log("T:"+tentativas)
 }
-if (tentativas == 1) {
-  alert('Uau! Você acertou de primeira! O número secreto é ' + numeroSecreto);
-} else {
-  alert('Parabéns! Você acertou o número secreto em ' + tentativas + ' tentativas!');
-}
+// if (tentativas == 1) {
+//   alert('Uau! Você acertou de primeira! O número secreto é ' + numeroSecreto);
+// } else {
+//   alert('Parabéns! Você acertou o número secreto em ' + tentativas + ' tentativas!');
+// }
+
+// Alternativa com ternário:
+let palavraTentativa = tentativas === 1 ? 'tentativa' : 'tentativas';
+alert(`Parabéns! Você acertou o número secreto em ${tentativas} ${palavraTentativa}!`);
