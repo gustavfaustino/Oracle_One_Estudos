@@ -257,7 +257,41 @@ const dia_da_semana = prompt("Digite o dia da semana:")
           </div>
         </div>
       </div>
+      <div class="module-container">
+        <button class="module-title">
+          <span class="module-icon">🔧</span>
+          Desafios Aula 3: Estruturas de Repetição
+        </button>
 
+        <div class="module-content">
+          <!-- Desafio 1 -->
+          <div class="challenge">
+            <button class="challenge-title">
+              <span>Desafio 1</span> Contagem Regressiva!
+            </button>
+            <div class="challenge-content">
+              <h4>Demonstração Interativa</h4>
+              <div class="interactive-demo">
+          <div id="countdownDisplay" style="font-size:2em; margin-bottom:8px;">10</div>
+          <button id="runCountdown">Iniciar Contagem</button>
+              </div>
+              <h4>Resolução em Código</h4>
+              <pre><code>document.getElementById("runCountdown").addEventListener("click", () => {
+          let countdown = 10;
+          const countdownDisplay = document.getElementById("countdownDisplay");
+          countdownDisplay.innerHTML = countdown;
+
+          const interval = setInterval(() => {
+        countdown--;
+        countdownDisplay.innerHTML = countdown;
+
+        if (countdown <= 0) {
+            clearInterval(interval);
+            alert("Contagem regressiva finalizada!");
+        }
+          }, 1000);
+      });
+      </code></pre>
     </main>
 
     <div id="custom-alert" class="custom-alert"></div>

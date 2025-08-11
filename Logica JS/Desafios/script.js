@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // PARTE 2
-
     // Desafio 1: boa semana!
     // Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
     document.getElementById("runWeekdayCheck").addEventListener("click", () => {
@@ -149,4 +148,23 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Perdeu!! Não foi dessa vez :(")
         }
     })
+
+    // PARTE 3
+    // Desafio 1: contagem regressiva
+    // Crie um programa que conte de 10 até 0, mostrando cada número por segundo.
+    document.getElementById("runCountdown").addEventListener("click", () => {
+        let countdown = 10;
+        const countdownDisplay = document.getElementById("countdownDisplay");
+        countdownDisplay.innerHTML = countdown;
+
+        const interval = setInterval(() => {
+            countdown--;
+            countdownDisplay.innerHTML = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                alert("Contagem regressiva finalizada!");
+            }
+        }, 1000);
+    });
 })();
