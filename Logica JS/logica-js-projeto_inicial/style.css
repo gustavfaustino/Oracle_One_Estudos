@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+}
 
 body::before {
     background-image: url("img/code.png");
@@ -101,6 +105,11 @@ button {
     font-family: 'Inter', sans-serif;
 }
 
+button {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
 .texto__paragrafo {
     font-size: 32px;
     font-weight: 400;
@@ -108,6 +117,7 @@ button {
 
 button:disabled {
     background-color: gray;
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 1250px) {
