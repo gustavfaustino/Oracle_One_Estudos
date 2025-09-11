@@ -23,6 +23,9 @@ function verificarChute() {
         trocarTextoCampo('Você acertou!', 'titulo');
         trocarTextoCampo(mensagem_tentativas, 'descricao');
         titulo.style.color = 'green';
+
+        document.getElementById('reiniciar').removeAttribute('disabled');
+        document.querySelector('.container__input').setAttribute('disabled', 'true');
     } else {
         if (chute > numero_secreto) {
             trocarTextoCampo('O número secreto é menor!', 'descricao');
@@ -31,4 +34,8 @@ function verificarChute() {
         }
         tentativas++;
     }
+}
+
+function reiniciarJogo(){
+
 }
