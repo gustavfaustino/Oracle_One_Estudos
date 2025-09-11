@@ -3,16 +3,15 @@ function trocarTextoCampo(novoTexto, tag) {
     campo.innerHTML = novoTexto;
 }
 
-// let titulo = document.getElementById('titulo');
-// titulo.innerHTML = 'Jogão do número secreto';
-trocarTextoCampo('Jogão do número secreto', 'titulo');
-
-// let paragrafo = document.getElementById('descricao');
-// paragrafo.innerHTML = 'Adivinhe o número entre 1 e 10';
-trocarTextoCampo('Adivinhe o número entre 1 e 10', 'descricao');
+function exibirMensagemInicial() {
+    trocarTextoCampo('Jogão do número secreto', 'titulo');
+    trocarTextoCampo('Adivinhe o número entre 1 e 10', 'descricao');
+}
 
 let numero_secreto = parseInt(Math.random() * 10) + 1;
 let tentativas = 1;
+
+exibirMensagemInicial();
 
 function verificarChute() {
     let chute = parseInt(document.querySelector('.container__input').value);
@@ -37,5 +36,11 @@ function verificarChute() {
 }
 
 function reiniciarJogo(){
-
+    numero_secreto = parseInt(Math.random() * 10) + 1;
+    tentativas = 1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', 'true');
+    document.querySelector('.container__input').removeAttribute('disabled');
+    document.querySelector('.container__input').value = '';
+    titulo.style.color = 'white';
 }
