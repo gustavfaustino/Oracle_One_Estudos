@@ -167,4 +167,94 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 1000);
     });
-})();
+
+    // PARTE 4
+    // Desafio 1: Qual seu IMC?
+    document.getElementById("runIMCCalculator").addEventListener("click", () => {
+        let peso = parseFloat(document.getElementById("getPeso").value);
+        let altura = parseFloat(document.getElementById("getAltura").value);
+
+        if (isNaN(peso) || isNaN(altura) || altura === 0) {
+            alert("Por favor, insira valores válidos para peso e altura.");
+        } else {
+            let imc = peso / (altura * altura);
+            alert(`Seu IMC é: ${imc.toFixed(2)}`);
+        }
+    });
+
+    // Desafio 2: Fatorial
+    // Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+    document.getElementById("runFatorialCalculator").addEventListener("click", () => {
+        let numero = parseInt(document.getElementById("getFatorial").value);
+
+        const calcularFatorial = (n) => {
+            if (n === 0) return 1;
+            return n * calcularFatorial(n - 1);
+        };
+
+        alert(`O fatorial de ${numero} é: ${calcularFatorial(numero)}`);
+    });
+
+    // Desafio 3: Real ou Dolar?
+    // Crie uma função que converta um valor em reais para dólares, considerando uma taxa de câmbio fixa de 4.80.
+    document.getElementById("runCurrencyConverter").addEventListener("click", () => {
+        let valorEmReais = parseFloat(document.getElementById("getValorReais").value);
+        const taxaDeCambio = 4.80;
+
+        const converterParaDolares = (valor) => {
+            return valor / taxaDeCambio;
+        };
+
+        alert(`O valor em dólares é: ${converterParaDolares(valorEmReais).toFixed(2)}`);
+    });
+
+    // Desafio 4: Sala grande o.O
+    // Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+    document.getElementById("runRoomCalculator").addEventListener("click", () => {
+        let largura = parseFloat(document.getElementById("getLargura").value);
+        let comprimento = parseFloat(document.getElementById("getComprimento").value);
+
+        const calcularArea = (largura, comprimento) => {
+            return largura * comprimento;
+        };
+
+        const calcularPerimetro = (largura, comprimento) => {
+            return 2 * (largura + comprimento);
+        };
+
+        alert(`A área da sala é: ${calcularArea(largura, comprimento)} m²`);
+        alert(`O perímetro da sala é: ${calcularPerimetro(largura, comprimento)} m`);
+    });
+
+    // Desafio 5: Sala grande (circular agora) o.O
+    // Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+    document.getElementById("runCircularRoomCalculator").addEventListener("click", () => {
+        let raio = parseFloat(document.getElementById("getRaio").value);
+        const pi = 3.14;
+
+        const calcularArea = (raio) => {
+            return pi * raio * raio;
+        };
+
+        const calcularPerimetro = (raio) => {
+            return 2 * pi * raio;
+        };
+
+        alert(`A área da sala circular é: ${calcularArea(raio)} m²`);
+        alert(`O perímetro da sala circular é: ${calcularPerimetro(raio)} m`);
+    });
+
+    // Desafio 6: Tabuada
+    // Crie uma função que mostre na tela a tabuada de um número dado como parâmetro
+    document.getElementById("runMultiplicationTable").addEventListener("click", () => {
+        let numero = parseInt(document.getElementById("getTabuada").value);
+        let resultado = `Tabuada de ${numero}:\n`;
+
+        for (let i = 1; i <= 10; i++) {
+            resultado += `${numero} x ${i} = ${numero * i}\n`;
+        }
+
+        alert(resultado);
+    });
+
+});
