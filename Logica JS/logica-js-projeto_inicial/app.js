@@ -1,11 +1,15 @@
-function trocarTextoCampo(novoTexto, tag) {
+function exibirTextoNaTela(novoTexto, tag) {
     let campo = document.getElementById(tag);
     campo.innerHTML = novoTexto;
+
+    responsiveVoice.speak(novoTexto, 'Brazilian Portuguese Female',
+        { rate: 1, pitch: 0.9, volume: 0.3 });
 }
 
+
 function exibirMensagemInicial() {
-    trocarTextoCampo('Jogão do número secreto', 'titulo');
-    trocarTextoCampo('Adivinhe o número entre 1 e 10', 'descricao');
+    exibirTextoNaTela('Jogão do número secreto', 'titulo');
+    exibirTextoNaTela('Adivinhe o número entre 1 e 10', 'descricao');
 }
 
 let numeros_sorteados = [];
@@ -33,27 +37,27 @@ exibirMensagemInicial();
 
 function verificarChute() {
     let chute = parseInt(document.querySelector('.container__input').value);
-   
+
     if (chute == numero_secreto) {
         let mensagem_tentativas = `Você acertou em ${tentativas} ${tentativas > 1 ? 'tentativas' : 'tentativa'}!`;
 
-        trocarTextoCampo('Você acertou!', 'titulo');
-        trocarTextoCampo(mensagem_tentativas, 'descricao');
+        exibirTextoNaTela('Você acertou!', 'titulo');
+        exibirTextoNaTela(mensagem_tentativas, 'descricao');
         titulo.style.color = 'green';
 
         document.getElementById('reiniciar').removeAttribute('disabled');
         document.querySelector('.container__input').setAttribute('disabled', 'true');
     } else {
         if (chute > numero_secreto) {
-            trocarTextoCampo('O número secreto é menor!', 'descricao');
+            exibirTextoNaTela('O número secreto é menor!', 'descricao');
         } else {
-            trocarTextoCampo('O número secreto é maior!', 'descricao');
+            exibirTextoNaTela('O número secreto é maior!', 'descricao');
         }
         tentativas++;
     }
 }
 
-function reiniciarJogo(){
+function reiniciarJogo() {
     numero_secreto = gerarNumeroSecreto();
     tentativas = 1;
     exibirMensagemInicial();
