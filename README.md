@@ -1,6 +1,6 @@
 # 🚀 Oracle Next Education - ONE | Formação Iniciante em Programação
 
-[![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow)]() 
+[![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow)]()
 [![Feito com ♥](https://img.shields.io/badge/Feito%20com-❤-c408b2)]()
 
 > Repositório dedicado a **todas as atividades, exercícios e projetos** desenvolvidos durante a **Formação Iniciante em Programação** do programa **Oracle Next Education (ONE)**, em parceria com a [Alura](https://www.alura.com.br/).
@@ -29,24 +29,32 @@ Além do conteúdo técnico, o programa oferece mentorias ao vivo, webinars com 
 
 O programa oferece trilhas focadas nas áreas de maior demanda no mercado de tecnologia:
 
-| Trilha | Tecnologias Abordadas |
-| :--- | :--- |
-| 🚀 **Iniciante em Programação** | Lógica de Programação, JavaScript, Git, GitHub, Soft Skills. |
-| 📊 **Especialização Data Science** | Python, Fundamentos de Dados, SQL, Manipulação e Visualização de Dados, IA. |
-| ☁️ **Aprofundamento Oracle**| Oracle Cloud Infrastructure (OCI), Banco de Dados MySQL, Inteligência Artificial Generativa. |
+| Trilha                             | Tecnologias Abordadas                                                                        |
+| :--------------------------------- | :------------------------------------------------------------------------------------------- |
+| 🚀 **Iniciante em Programação**    | Lógica de Programação, JavaScript, Git, GitHub, Soft Skills.                                 |
+| 📊 **Especialização Data Science** | Python, Fundamentos de Dados, SQL, Manipulação e Visualização de Dados, IA.                  |
+| ☁️ **Aprofundamento Oracle**       | Oracle Cloud Infrastructure (OCI), Banco de Dados MySQL, Inteligência Artificial Generativa. |
 
 ---
 
 ## 🏆 Progresso no Programa
-  - [x] **Fase 1: Conteúdos Iniciais**
-      - [x] Lógica de Programação com IA
-      - [ ] Desenvolvimento Pessoal
-  - [ ] **Fase 2: Tech Foundation**
-      - [ ] Trilha de Especialização (Data Science 💪)
-      - [ ] Challenges e Projetos Práticos
-  - [ ] **Fase 3: Tech Advanced**
-      - [ ] Trilhas de Aprofundamento Oracle
-      - [ ] Preparação para Certificação
+
+- [x] **Fase 1: Conteúdos Iniciais**
+  - [x] Lógica de Programação com IA
+  - [ ] Desenvolvimento Pessoal
+- [ ] **Fase 2: Tech Foundation**
+  - [ ] Trilha de Especialização (Data Science 💪)
+  - [ ] Challenges e Projetos Práticos
+- [ ] **Fase 3: Tech Advanced**
+  - [ ] Trilhas de Aprofundamento Oracle
+  - [ ] Preparação para Certificação
 
 ---
-> 💬 *"A tecnologia é para todos, basta darmos o primeiro passo."*
+
+## 🧩 Desafios
+
+- Número Secreto: Primeira atividade de Lógica com JS — [abrir projeto](http://numero-secreto-oracleone-ggfo.s3-website-us-east-1.amazonaws.com/)
+
+---
+
+> 💬 _"A tecnologia é para todos, basta darmos o primeiro passo."_
