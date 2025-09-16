@@ -23,13 +23,7 @@ O **Jogo do Número Secreto** é um jogo simples e divertido para praticar lógi
 
 ## 🖥️ Preview
 
-Você pode abrir o projeto localmente com o arquivo `index.html`. Algumas artes utilizadas no projeto:
-
-<p>
-  <img src="./img/robot.png" alt="Robô do jogo" height="110" />
-  <img src="./img/trophy.png" alt="Troféu de vitória" height="110" />
-  <img src="./img/code.png" alt="Ícone de código" height="110" />
-</p>
+Você pode abrir o projeto através desse [link](http://numero-secreto-oracleone-ggfo.s3-website-us-east-1.amazonaws.com/)
 
 ---
 
