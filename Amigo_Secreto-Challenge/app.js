@@ -30,3 +30,20 @@ function atualizarLista() {
         lista_amigos.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    if (amigos.length < 2) {
+        alert("Adicione pelo menos dois amigos para sortear.");
+        return;
+    }
+
+    let indice_sorteado = Math.floor(Math.random() * amigos.length);
+    let amigo_sorteado = amigos[indice_sorteado];
+
+    document.getElementById("resultado").textContent = "Amigo sorteado: " + amigo_sorteado + "! Parabéns!";
+    document.getElementById("resultado").style.color = "green";
+
+    // Limpar a lista de amigos após o sorteio
+    amigos = [];
+    atualizarLista();
+}
