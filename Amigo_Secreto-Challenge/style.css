@@ -39,6 +39,12 @@ body {
   padding: 40px 0 0;
 }
 
+.header-banner img {
+  width: 470px;
+  height: 400px;
+  object-fit: contain;
+}
+
 /* Seção de entrada */
 .input-section {
   flex: 60%;
