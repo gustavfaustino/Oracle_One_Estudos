@@ -43,6 +43,10 @@ function sortearAmigo() {
     document.getElementById("resultado").textContent = "Amigo sorteado: " + amigo_sorteado + "! Parabéns!";
     document.getElementById("resultado").style.color = "green";
 
+    // Efeito confete no botão
+    document.getElementsByClassName("button-draw")[0].classList.add("confetti");
+    setTimeout(() => { document.getElementsByClassName("button-draw")[0].classList.remove("confetti") }, 2000);
+
     // Limpar a lista de amigos após o sorteio
     amigos = [];
     atualizarLista();
