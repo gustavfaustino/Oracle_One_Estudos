@@ -32,19 +32,9 @@ O objetivo deste desafio é fortalecer a lógica de programação com JavaScript
 
 ---
 
-## ▶️ Como Executar Localmente (Windows)
+## ▶️ Como Executar
 
-Você pode abrir o projeto diretamente no navegador, sem dependências.
-
-1. Baixe/clone o repositório e acesse a pasta do projeto.
-2. No Windows, execute:
-
-```cmd
-cd "c:\\Users\\gusta\\Desktop\\DEV\\meus dev\\OracleOne\\Amigo_Secreto-Challenge"
-start index.html
-```
-
-Pronto! O navegador abrirá a aplicação.
+Você pode abrir o projeto diretamente no navegador, acessando [esse link](http://amigo-secreto-challenge-one-ggfo.s3-website-us-east-1.amazonaws.com/)
 
 ---
 
@@ -56,6 +46,7 @@ Pronto! O navegador abrirá a aplicação.
 4. Clique em “Sortear amigo” para exibir o resultado.
 
 Observações:
+
 - Após o sorteio, a lista é limpa automaticamente.
 - O botão de sortear ativa uma pequena animação de confete por 2 segundos.
 
