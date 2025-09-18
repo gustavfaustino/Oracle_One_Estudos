@@ -1,10 +1,12 @@
 # 🎁 Desafio: Amigo Secreto — Oracle Next Education (ONE)
 
-[![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow)]()
+[![Status](https://img.shields.io/badge/Status-Concluido-green)]()
 [![Feito com ♥](https://img.shields.io/badge/Feito%20com-❤-c408b2)]()
 [![HTML5](https://img.shields.io/badge/HTML5-orange)]()
 [![CSS3](https://img.shields.io/badge/CSS3-blue)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)]()
+
+![Badge do Programa](assets/badge.png)
 
 > Projeto desenvolvido como parte da Formação Iniciante em Programação do programa Oracle Next Education (ONE), em parceria com a [Alura](https://www.alura.com.br/).
 
