@@ -63,6 +63,7 @@ Amigo_Secreto-Challenge/
 ├─ app.js
 └─ assets/
    ├─ amigo-secreto.png
+   ├─ badge.png
    └─ play_circle_outline.png
 ```
 
@@ -80,11 +81,9 @@ Amigo_Secreto-Challenge/
 
 ## 🚀 Próximos Passos (Ideias de Melhoria)
 
-- [ ] Impedir nomes duplicados e tratar espaços em branco
+- [ ] Tratar espaços em branco
 - [ ] Remover nomes individualmente e “limpar lista”
 - [ ] Sortear pares (mapeamento completo) sem repetir pessoas
-- [ ] Persistência no `localStorage`
-- [ ] Testes unitários simples para funções de sorteio/validação
 - [ ] Tema claro/escuro e melhorias de acessibilidade
 
 ---
