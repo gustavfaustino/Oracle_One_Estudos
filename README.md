@@ -54,6 +54,7 @@ O programa oferece trilhas focadas nas áreas de maior demanda no mercado de tec
 ## 🧩 Desafios
 
 - Número Secreto: Primeira atividade de Lógica com JS — [abrir projeto](http://numero-secreto-oracleone-ggfo.s3-website-us-east-1.amazonaws.com/)
+- Amigo Secreto: Primeira challenge do programa \o/ — [abrir projeto](http://amigo-secreto-challenge-one-ggfo.s3-website-us-east-1.amazonaws.com/)
 
 ---
 
